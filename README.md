@@ -1,4 +1,4 @@
-# ebird-phylotree: Highlight eBird Species on a Global Bird Phylogeny
+# ebird_phylotree: Highlight eBird Species on a Global Bird Phylogeny
 
 This R script reads your personal eBird checklist (CSV), matches observed species to the OpenTree of Life, and highlights them on a circular bird phylogeny.
 
