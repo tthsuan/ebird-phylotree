@@ -59,20 +59,20 @@ your_species <- matched_subset$unique_name
 tip_df <- data.frame(
   label = bird_tree$tip.label,
   species_clean = bird_species_clean,
-  color = ifelse(bird_species_clean %in% your_species, "#0F4D92", "white")
+  color = ifelse(bird_species_clean %in% your_species, "#00356B", "white")
 )
 
 # Plot only observed species on full tree
 ggtree(bird_tree, layout = "circular") %<+%
-  filter(tip_df, color == "#0F4D92") +
-  geom_tiplab(aes(label = species_clean), color = "#0F4D92", size = 1.5) +
+  filter(tip_df, color == "#00356B") +
+  geom_tiplab(aes(label = species_clean), color = "#00356B", size = 1.5) +
   theme(legend.position = "none")
 
 # Print
 cat("Total unique species in your eBird data:", length(unique(ebird_data$`Scientific Name`)), "\n")
 cat("Species matched to OpenTree taxonomy database:", length(valid_matched$unique_name), "\n")
 cat("Species successfully included in induced subtree (OpenTree synthesis tree):", length(matched_subset$ott_id), "\n")
-cat("Species highlighted in blue on the full global bird tree:", sum(tip_df$color == "#0F4D92"), "\n\n")
+cat("Species highlighted in blue on the full global bird tree:", sum(tip_df$color == "#00356B"), "\n\n")
 
 cat("Note: The number of species highlighted in blue is lower because the full bird tree includes thousands of species globally. Some species from your checklist or induced subtree may not exactly match tip labels in this larger tree, due to taxonomy differences, naming formats, or pruning in OpenTree synthesis versions. All data is from OpenTree sources.")
 
