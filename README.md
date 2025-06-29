@@ -7,7 +7,7 @@ This R script reads your personal eBird checklist (CSV), matches observed specie
 1. Clone this repo or download files.
 2. Place your `MyEBirdData.csv` (downloaded from eBird) into this folder.
 3. Run `ebird_phylotree_simpleversion.R`. It will automatically install required packages if not already installed.
-4. A circular tree will be plotted, showing only your observed species in blue.
+4. A circular tree will be plotted, showing only your observed species in (Yale) blue.
 
 ## Note
 
