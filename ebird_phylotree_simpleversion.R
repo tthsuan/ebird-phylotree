@@ -65,7 +65,7 @@ tip_df <- data.frame(
 # Plot only observed species on full tree
 ggtree(bird_tree, layout = "circular") %<+%
   filter(tip_df, color == "#00356B") +
-  geom_tiplab(aes(label = species_clean), color = "#00356B", size = 1.5) +
+  geom_tiplab(aes(label = species_clean), color = "#00356B", size = 1.5, offset = 5) +
   theme(legend.position = "none")
 
 # Print
