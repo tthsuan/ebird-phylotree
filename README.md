@@ -11,4 +11,4 @@ This R script reads your personal eBird checklist (CSV), matches observed specie
 
 ## Note
 
-All code and explanations in this repository were created with the help of ChatGPT.
+All code and explanations in this repository were created by ChatGPT.
