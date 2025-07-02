@@ -1,6 +1,8 @@
-# ebird_phylotree: Highlight eBird Species on a Global Bird Phylogeny
+# ebird_phylotree: Show your eBird Species on a Global Bird Phylogeny
 
-This R script reads your personal eBird checklist (CSV), matches observed species to the OpenTree of Life, and highlights them on a circular bird phylogeny.
+This project lets you create your own **bird phylogenetic tree** using an exported **eBird species checklist**, matched to the **OpenTree of Life**, and visualized in **R using ggtree**.
+
+If you're an eBirder and want to see how your observed species are distributed on the bird tree of life, this tool makes it easy and automatic.
 
 ## How to use
 
